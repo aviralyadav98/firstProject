@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="login-card">
+        <header class="login-card__hero" aria-hidden="true">
+          <svg
+            class="mountains"
+            viewBox="0 0 360 200"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMax slice"
+          >
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#b8e4ff" />
+                <stop offset="100%" stop-color="#d8f0ff" />
+              </linearGradient>
+            </defs>
+            <rect width="360" height="200" fill="url(#sky)" />
+            <g fill="#fff" opacity="0.9">
+              <circle cx="40" cy="30" r="2" />
+              <circle cx="90" cy="55" r="1.5" />
+              <circle cx="140" cy="25" r="2" />
+              <circle cx="200" cy="45" r="1.5" />
+              <circle cx="260" cy="20" r="2" />
+              <circle cx="310" cy="50" r="1.5" />
+              <circle cx="330" cy="28" r="2" />
+              <circle cx="70" cy="80" r="1.5" />
+              <circle cx="180" cy="70" r="2" />
+              <circle cx="290" cy="85" r="1.5" />
+            </g>
+            <path
+              fill="#5b7fc4"
+              d="M0 165 L80 95 L150 140 L220 75 L300 130 L360 100 L360 200 L0 200 Z"
+            />
+            <path
+              fill="#6d8fd4"
+              d="M0 175 L120 110 L200 150 L280 90 L360 125 L360 200 L0 200 Z"
+            />
+            <path
+              fill="#7a9be0"
+              d="M0 185 L60 140 L140 165 L210 115 L280 155 L360 135 L360 200 L0 200 Z"
+            />
+            <path fill="#fff" d="M80 95 L95 108 L65 108 Z" />
+            <path fill="#fff" d="M220 75 L238 92 L202 92 Z" />
+            <path fill="#fff" d="M300 130 L318 147 L282 147 Z" />
+            <g fill="#2d4a7a">
+              <path d="M0 198 L8 178 L14 198 Z" />
+              <path d="M18 198 L26 172 L32 198 Z" />
+              <path d="M36 198 L44 180 L50 198 Z" />
+              <path d="M54 198 L62 168 L68 198 Z" />
+              <path d="M72 198 L80 175 L86 198 Z" />
+              <path d="M90 198 L98 170 L104 198 Z" />
+              <path d="M108 198 L116 178 L122 198 Z" />
+              <path d="M126 198 L134 165 L140 198 Z" />
+              <path d="M144 198 L152 172 L158 198 Z" />
+              <path d="M162 198 L170 178 L176 198 Z" />
+              <path d="M180 198 L188 168 L194 198 Z" />
+              <path d="M198 198 L206 175 L212 198 Z" />
+              <path d="M216 198 L224 170 L230 198 Z" />
+              <path d="M234 198 L242 178 L248 198 Z" />
+              <path d="M252 198 L260 165 L266 198 Z" />
+              <path d="M270 198 L278 172 L284 198 Z" />
+              <path d="M288 198 L296 178 L302 198 Z" />
+              <path d="M306 198 L314 168 L320 198 Z" />
+              <path d="M324 198 L332 175 L338 198 Z" />
+              <path d="M342 198 L350 170 L356 198 Z" />
+            </g>
+            <path
+              fill="#fff"
+              d="M0 198 Q180 175 360 198 L360 200 L0 200 Z"
+            />
+          </svg>
+        </header>
+
+        <section class="login-card__body">
+          <h1 class="login-card__title">Welcome back!</h1>
+
+          <form class="login-form" action="#" method="post">
+            <div class="field">
+              <span class="field__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M5 20c0-4 3.5-7 7-7s7 3 7 7" />
+                </svg>
+              </span>
+              <label class="field__label" for="username">Username</label>
+              <input
+                class="field__input"
+                type="text"
+                id="username"
+                name="username"
+                autocomplete="username"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <span class="field__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="6" y="10" width="12" height="10" rx="2" />
+                  <path d="M9 10V8a3 3 0 0 1 6 0v2" />
+                </svg>
+              </span>
+              <label class="field__label" for="password">Password</label>
+              <input
+                class="field__input"
+                type="password"
+                id="password"
+                name="password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+
+            <button class="btn-login" type="submit">Log in</button>
+          </form>
+
+          <p class="login-card__footer">
+            <a href="#">No account yet?</a>
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

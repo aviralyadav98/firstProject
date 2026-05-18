@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  background: #b8e4ff;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 20% 30%, #fff 0%, transparent 55%),
+    radial-gradient(ellipse 100% 70% at 80% 70%, #d4efff 0%, transparent 50%),
+    radial-gradient(ellipse 90% 60% at 50% 100%, #9ed8ff 0%, transparent 45%),
+    linear-gradient(160deg, #a8dcff 0%, #d8f2ff 45%, #eef8ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(45, 90, 140, 0.18);
+}
+
+.login-card__hero {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.mountains {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.login-card__body {
+  padding: 1.25rem 1.75rem 1.75rem;
+}
+
+.login-card__title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e4d7a;
+  margin-bottom: 1.75rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.75rem;
+  align-items: end;
+}
+
+.field__icon {
+  grid-row: 1 / 3;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #8aa8c4;
+  border: 1.5px solid #b0c4d4;
+  border-radius: 50%;
+}
+
+.field__icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.field__label {
+  grid-column: 2;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #b0bec8;
+  margin-bottom: 0.35rem;
+}
+
+.field__input {
+  grid-column: 2;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #cfd8dc;
+  padding: 0.25rem 0 0.5rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #37474f;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.field__input:focus {
+  border-bottom-color: #7ecfff;
+}
+
+.field__input::placeholder {
+  color: transparent;
+}
+
+.btn-login {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #7ecfff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-login:hover {
+  background: #6bbef5;
+}
+
+.btn-login:active {
+  transform: scale(0.98);
+}
+
+.login-card__footer {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.login-card__footer a {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #b0bec8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-card__footer a:hover {
+  color: #7ecfff;
+}
